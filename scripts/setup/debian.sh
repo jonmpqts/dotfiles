@@ -11,3 +11,4 @@ install_or_upgrade() {
 }
 
 install_or_upgrade git
+install_or_upgrade vim
