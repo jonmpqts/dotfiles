@@ -17,6 +17,11 @@ if [ ! -d $DOTFILES_DIR ]; then
     tar xzvf master.tar.gz
     mv dotfiles-master dotfiles
   fi
+else
+  cd $DOTFILES_DIR
+  git stash
+  git pull origin master
+  git stash pop
 fi
 
 cd $DOTFILES_DIR
